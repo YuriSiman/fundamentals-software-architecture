@@ -34,7 +34,7 @@ git clone https://github.com/YuriSiman/fundamentals-software-architecture.git
 
 Como construir software:
 
-IMAGEM
+<img src="./readme-images/arquitetura-software.png" />
 
 ### TOGAF
 
@@ -58,7 +58,8 @@ Engenharia de sistemas e software ISO / IEC / IEEE 42010 - A descrição da arqu
 
 Pilares da Programação Orientada a Objetos
 
-IMAGEM
+
+<img src="./readme-images/pilares-oop.png" />
 
 [Visualizar Código](https://github.com/YuriSiman/fundamentals-software-architecture/tree/master/OOP)  
 [Voltar ao Início](https://github.com/YuriSiman/fundamentals-software-architecture#fundamentos-arquitetura-de-software)  
@@ -67,7 +68,7 @@ IMAGEM
 
 ## SOLID
 
-IMAGEM
+<img src="./readme-images/solid.png" />
 
 SOLID é um acrônimo dos cinco primeiros princípios da programação orientada a objetos e design de código identificados por Robert C. Martin (Uncle Bob) por volta do ano 2000. Os princípios SOLID devem ser aplicados para se obter os benefícios da orientação a objetos, como:
 
@@ -130,7 +131,7 @@ Dependa de uma abstração e não de uma implementação.
 
 ### Passo 2
 
-* :dancers: Clone este repositório para sua máquina local usando `git clone https://github.com/YuriSiman/complete-app-crud-aspnetcore-mvc.git`
+* :dancers: Clone este repositório para sua máquina local usando `git clone https://github.com/YuriSiman/fundamentals-software-architecture.git`
 
 ### Passo 3
 
@@ -168,7 +169,7 @@ Depois que seu pull request for mesclado, você pode excluir sua feature branch
 
 ## :pencil: Licença
 
-[![License](https://img.shields.io/badge/license-mit-%23A6CE39?style=for-the-badge&logo=github)](https://github.com/YuriSiman/complete-app-crud-aspnetcore-mvc/blob/master/LICENSE)   
+[![License](https://img.shields.io/badge/license-mit-%23A6CE39?style=for-the-badge&logo=github)](https://github.com/YuriSiman/fundamentals-software-architecture/blob/master/LICENSE)   
 
 ---
 
