@@ -13,17 +13,17 @@ Tenho como objetivo implementar uma documentação a respeito dos fundamentos de
 Clone este repositório em sua máquina local usando:  
 
 ```
-git clone https://github.com/YuriSiman/fundamentals-software-architecture.git
+git clone https://github.com/YuriSiman/software-architecture-fundamentals.git
 ```
 
 ### :pencil2: Tópicos
 
-- [x] [OOP](https://github.com/YuriSiman/fundamentals-software-architecture#oop)  
-- [x] [SOLID](https://github.com/YuriSiman/fundamentals-software-architecture#solid)  
-- [x] [Dependency Injection](https://github.com/YuriSiman/fundamentals-software-architecture#dependency-injection)  
-- [x] [Clean Code](https://github.com/YuriSiman/fundamentals-software-architecture#clean-code)  
-- [x] [Design Patterns](https://github.com/YuriSiman/fundamentals-software-architecture#design-patterns)  
-- [x] [Clean Code](https://github.com/YuriSiman/fundamentals-software-architecture#clean-code)  
+- [x] [OOP](https://github.com/YuriSiman/software-architecture-fundamentals#oop)  
+- [x] [SOLID](https://github.com/YuriSiman/software-architecture-fundamentals#solid)  
+- [x] [Dependency Injection](https://github.com/YuriSiman/software-architecture-fundamentals#dependency-injection)  
+- [x] [Clean Code](https://github.com/YuriSiman/software-architecture-fundamentals#clean-code)  
+- [x] [Design Patterns](https://github.com/YuriSiman/software-architecture-fundamentals#design-patterns)  
+- [x] [Clean Code](https://github.com/YuriSiman/software-architecture-fundamentals#clean-code)  
 
 ---
 
@@ -49,7 +49,7 @@ Engenharia de sistemas e software ISO / IEC / IEEE 42010 - A descrição da arqu
 
 [ISO/IEC/IEEE 42010-2011](https://www.iso.org/standard/50508.html)  
 
-[Voltar ao Início](https://github.com/YuriSiman/fundamentals-software-architecture#fundamentos-arquitetura-de-software)  
+[Voltar ao Início](https://github.com/YuriSiman/software-architecture-fundamentals#fundamentos-arquitetura-de-software)  
 
 ---
 
@@ -62,8 +62,8 @@ Pilares da Programação Orientada a Objetos
 
 <img src="./readme-images/pilares-oop.png" />
 
-[Visualizar Código](https://github.com/YuriSiman/fundamentals-software-architecture/tree/master/OOP)  
-[Voltar ao Início](https://github.com/YuriSiman/fundamentals-software-architecture#fundamentos-arquitetura-de-software)  
+[Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/OOP)  
+[Voltar ao Início](https://github.com/YuriSiman/software-architecture-fundamentals#fundamentos-arquitetura-de-software)  
 
 ---
 
@@ -111,14 +111,14 @@ Módulos de alto nível não devem depender de módulos de baixo nível. Ambos d
 
 Dependa de uma abstração e não de uma implementação.
 
-[Visualizar Código](https://github.com/YuriSiman/fundamentals-software-architecture/tree/master/SOLID)  
-[Voltar ao Início](https://github.com/YuriSiman/fundamentals-software-architecture#fundamentos-arquitetura-de-software)  
+[Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/SOLID)  
+[Voltar ao Início](https://github.com/YuriSiman/software-architecture-fundamentals#fundamentos-arquitetura-de-software)  
 
 ---
 
 ## Clean Code
 
-O que é um código limpo?
+### O que é um código limpo?
 
 - Simples
 - Direto
@@ -131,7 +131,7 @@ O que é um código limpo?
 "Qualquer tolo consegue escrever código que um computador entenda. Bons programadores escrevem código que humanos possam entender".  
 Martin Fowler
 
-Quanto custa um código ruim?
+### Quanto custa um código ruim?
 
 - Alta rotatividade
 - Demora na entrega de novas funcionalidades
@@ -141,7 +141,7 @@ Quanto custa um código ruim?
 - Desmotivação profissional
 - Mais tempo depurando o código do que escrevendo
 
-Como medir um bom código?
+### Como medir um bom código?
 
 - Quantidade de linhas de código (Devemos buscar reduzir ao máximo o tamanho do código, dependendo do projeto)
 - Número de métodos (Devemos buscar utilizar a maior quantidade de métodos para um desacoplamento maior)
@@ -151,7 +151,46 @@ Como medir um bom código?
 - Número de estruturas de decisão (Evitar um exagero de estruturas de decisão)
 - Escolher os nomes que revelem intenção (Revelando o motivo dele existir, o que faz e como é usado. Utilizar nomes fáceis de se encontrar, evitando siglas ou acrônimos. Não economizar palavras para dar nome a alguma coisa)
 
-[Voltar ao Início](https://github.com/YuriSiman/fundamentals-software-architecture#fundamentos-arquitetura-de-software)  
+### Boas práticas
+
+- Nome de classes devem ser substantivos e não devem conter verbos. Ex: ClienteRepository
+- Nomes de métodos devem conter verbos de preferência no infinitivo. Ex: AdicionarCliente
+- Não ser genérico. Ex: ProcessarFolhaPagamento / CalcularImpostoRenda
+- Menos é mais! "A primeira regra dos métodos é que eles devem ser pequenos. A segunda regra é que eles devem ser menores ainda". Uncle Bob
+    - Métodos <= 20 linhas
+    - Linha <= 100 caracteres
+    - Classe <= 500 linhas
+- Extraia trechos de métodos privados
+- Métodos devem fazer apenas uma coisa, fazê-la certa e somente fazê-la
+- Evite muitos parâmetros em métodos
+- Não deixe o método mentir dizendo que faz uma coisa mas na verdade faz outras "escondidas"
+- Se o método tiver mais de uma responsabilidade, extraia em dois ou mais
+- Leia seu método de cima para baixo como uma narrativa, ele deve fazer sentido
+- Aplique uma boa indentação
+
+### Comentários
+
+- Comentários não vão ajudar um código ruim ser melhor interpretado
+- Um código que requer comentário precisa ser reescrito
+- Não deixe trechos de código comentado
+
+Quando comentar?
+
+- Alertar consequências que podem vir a causar
+- Licença, direitos autorais, etc...
+- Necessidade de explicar uma regra de negócio interna
+- Decisões de design de código
+- Utilizar comentários quando os mesmos geram uma documentação do código (Ainda assim, não é tão recomendado)
+
+### Tratamento de erros
+
+- Tratar e prever possíveis exceções é de responsabilidade do desenvolvedor
+- Retorne exceptions e não códigos de erro
+- Informe o máximo que puder em sua exception
+- Se necessário crie exceptions personalizadas para um problema específico
+- Não retorne null
+
+[Voltar ao Início](https://github.com/YuriSiman/software-architecture-fundamentals#fundamentos-arquitetura-de-software)  
 
 ---
 
@@ -209,7 +248,7 @@ Depois que seu pull request for mesclado, você pode excluir sua feature branch
 
 ## :pencil: Licença
 
-[![License](https://img.shields.io/badge/license-mit-%23A6CE39?style=for-the-badge&logo=github)](https://github.com/YuriSiman/fundamentals-software-architecture/blob/master/LICENSE)   
+[![License](https://img.shields.io/badge/license-mit-%23A6CE39?style=for-the-badge&logo=github)](https://github.com/YuriSiman/software-architecture-fundamentals/blob/master/LICENSE)   
 
 ---
 
