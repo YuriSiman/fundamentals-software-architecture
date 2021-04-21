@@ -23,6 +23,7 @@ git clone https://github.com/YuriSiman/fundamentals-software-architecture.git
 - [x] [Dependency Injection](https://github.com/YuriSiman/fundamentals-software-architecture#dependency-injection)  
 - [x] [Clean Code](https://github.com/YuriSiman/fundamentals-software-architecture#clean-code)  
 - [x] [Design Patterns](https://github.com/YuriSiman/fundamentals-software-architecture#design-patterns)  
+- [x] [Clean Code](https://github.com/YuriSiman/fundamentals-software-architecture#clean-code)  
 
 ---
 
@@ -111,6 +112,45 @@ Módulos de alto nível não devem depender de módulos de baixo nível. Ambos d
 Dependa de uma abstração e não de uma implementação.
 
 [Visualizar Código](https://github.com/YuriSiman/fundamentals-software-architecture/tree/master/SOLID)  
+[Voltar ao Início](https://github.com/YuriSiman/fundamentals-software-architecture#fundamentos-arquitetura-de-software)  
+
+---
+
+## Clean Code
+
+O que é um código limpo?
+
+- Simples
+- Direto
+- Eficiente
+- Sem duplicidade
+- Elegante
+- Feito com cuidado
+- Fácil de ler
+
+"Qualquer tolo consegue escrever código que um computador entenda. Bons programadores escrevem código que humanos possam entender".  
+Martin Fowler
+
+Quanto custa um código ruim?
+
+- Alta rotatividade
+- Demora na entrega de novas funcionalidades
+- Dificuldade na manutenção
+- Alta incidência de bugs
+- Perda de confiança do cliente
+- Desmotivação profissional
+- Mais tempo depurando o código do que escrevendo
+
+Como medir um bom código?
+
+- Quantidade de linhas de código (Devemos buscar reduzir ao máximo o tamanho do código, dependendo do projeto)
+- Número de métodos (Devemos buscar utilizar a maior quantidade de métodos para um desacoplamento maior)
+- Número de classes (Devemos buscar utilizar a maior quantidade de métodos para um desacoplamento maior)
+- Linhas de código por método (Devemos buscar reduzir a quantidade de linhas dentro do método)
+- Complexidade ciclomática (Evitar uma grande quantidade de caminhos de execução independentes, ou seja, evitar if's encadeados)
+- Número de estruturas de decisão (Evitar um exagero de estruturas de decisão)
+- Escolher os nomes que revelem intenção (Revelando o motivo dele existir, o que faz e como é usado. Utilizar nomes fáceis de se encontrar, evitando siglas ou acrônimos. Não economizar palavras para dar nome a alguma coisa)
+
 [Voltar ao Início](https://github.com/YuriSiman/fundamentals-software-architecture#fundamentos-arquitetura-de-software)  
 
 ---
