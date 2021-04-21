@@ -20,10 +20,8 @@ git clone https://github.com/YuriSiman/software-architecture-fundamentals.git
 
 - [x] [OOP](https://github.com/YuriSiman/software-architecture-fundamentals#oop)  
 - [x] [SOLID](https://github.com/YuriSiman/software-architecture-fundamentals#solid)  
-- [x] [Dependency Injection](https://github.com/YuriSiman/software-architecture-fundamentals#dependency-injection)  
 - [x] [Clean Code](https://github.com/YuriSiman/software-architecture-fundamentals#clean-code)  
 - [x] [Design Patterns](https://github.com/YuriSiman/software-architecture-fundamentals#design-patterns)  
-- [x] [Clean Code](https://github.com/YuriSiman/software-architecture-fundamentals#clean-code)  
 
 ---
 
@@ -191,6 +189,38 @@ Quando comentar?
 - Não retorne null
 
 [Voltar ao Início](https://github.com/YuriSiman/software-architecture-fundamentals#fundamentos-arquitetura-de-software)  
+
+---
+
+## Design Patterns
+
+Design Patterns são padrões de código para solução de problemas conhecidos. O objetivo não é reinventar a roda, mas sim aplicar uma solução com um bom design de código. O conceito de padrões foi introduzido por 4 desenvolvedores intitulados Gang of Four (GoF) e hoje conta com 23 padrões fundamentais. Atualmente existem mais de 80 padrões conhecidos que são em geral variações dos 23 patterns do GoF.
+
+IMAGEM
+
+Os padrões do GoF estão divididos em 3 famílias:
+
+Família | Descrição
+------------ | -------------
+Creational Patterns (Criacional) | Fornecem meios de criação de um objeto e de como ele será instanciado
+Structural Patterns (Estrutural) | Tratam da composição de objetos por heranças e interfaces para diferentes funcionalidades
+Behavioral Patterns (Comportamental) | Tratam das interações e comunicação entre os objetos além da divisão de responsabilidades
+
+[.NET Design Patterns](https://dofactory.com/net/design-patterns)
+
+### Creational Patterns
+
+- Abstract Factory
+
+Cria uma instância de diversas famílias de classes
+
+- Factory Method
+
+Cria uma instância de diversas derivações de classes
+
+- Singleton
+
+Cria uma única instância que será utilizada por os recursos
 
 ---
 
