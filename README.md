@@ -196,7 +196,7 @@ Quando comentar?
 
 Design Patterns são padrões de código para solução de problemas conhecidos. O objetivo não é reinventar a roda, mas sim aplicar uma solução com um bom design de código. O conceito de padrões foi introduzido por 4 desenvolvedores intitulados Gang of Four (GoF) e hoje conta com 23 padrões fundamentais. Atualmente existem mais de 80 padrões conhecidos que são em geral variações dos 23 patterns do GoF.
 
-IMAGEM
+<img src="./readme-images/patterns.png" />
 
 Os padrões do GoF estão divididos em 3 famílias:
 
@@ -212,7 +212,11 @@ Behavioral Patterns (Comportamental) | Tratam das interações e comunicação e
 
 - Abstract Factory
 
-Cria uma instância de diversas famílias de classes
+Cria uma instância de diversas famílias de classes. Criar fábrica abstrata de fábricas.
+
+<img src="./readme-images/abstract-factory.png" />
+
+[Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/DesignPatterns/01%20-%20Creational/1.1%20-%20Abstract%20Factory)  
 
 - Factory Method
 
