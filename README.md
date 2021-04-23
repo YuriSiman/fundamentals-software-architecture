@@ -22,6 +22,7 @@ git clone https://github.com/YuriSiman/software-architecture-fundamentals.git
 - [x] [SOLID](https://github.com/YuriSiman/software-architecture-fundamentals#solid)  
 - [x] [Clean Code](https://github.com/YuriSiman/software-architecture-fundamentals#clean-code)  
 - [x] [Design Patterns](https://github.com/YuriSiman/software-architecture-fundamentals#design-patterns)  
+- [x] [Estilos e Padrões Arquiteturais](https://github.com/YuriSiman/software-architecture-fundamentals#estilos-e-padrões-arquiteturais)  
 
 ---
 
@@ -222,7 +223,7 @@ Cria uma instância de diversas famílias de classes. Criar fábrica abstrata de
 
 Cria uma instância de diversas derivações de classes
 
-IMAGEM
+<img src="./readme-images/factory-method.png" />
 
 [Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/DesignPatterns/01%20-%20Creational/1.2%20-%20Factory%20Method)  
 
@@ -230,7 +231,7 @@ IMAGEM
 
 Cria uma única instância que será utilizada por os recursos
 
-IMAGEM
+<img src="./readme-images/singleton.png" />
 
 [Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/DesignPatterns/01%20-%20Creational/1.3%20-%20Singleton)  
 
@@ -240,7 +241,7 @@ IMAGEM
 
 Compatibiliza objetos de interfaces diferentes
 
-IMAGEM
+<img src="./readme-images/adapter.png" />
 
 [Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/DesignPatterns/02%20-%20Structural/2.1%20-%20Adapter)  
 
@@ -248,7 +249,7 @@ IMAGEM
 
 Uma única classe que representa um subsistema
 
-IMAGEM
+<img src="./readme-images/facade.png" />
 
 [Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/DesignPatterns/02%20-%20Structural/2.2%20-%20Facade)  
 
@@ -256,7 +257,7 @@ IMAGEM
 
 Compartilha um objeto em estruturas de árvores que representam hierarquias
 
-IMAGEM
+<img src="./readme-images/composite.png" />
 
 [Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/DesignPatterns/02%20-%20Structural/2.3%20-%20Composite)  
 
@@ -267,7 +268,7 @@ IMAGEM
 
 Encapsula um command request em um objeto
 
-IMAGEM
+<img src="./readme-images/command.png" />
 
 [Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/DesignPatterns/03%20-%20Behavioral/3.1%20-%20Command)  
 
@@ -275,7 +276,7 @@ IMAGEM
 
 Encapsula um algoritimo dentro de uma classe
 
-IMAGEM
+<img src="./readme-images/strategy.png" />
 
 [Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/DesignPatterns/03%20-%20Behavioral/3.2%20-%20Strategy)  
 
@@ -283,9 +284,112 @@ IMAGEM
 
 Uma forma de notificar mudanças a uma série de classes
 
-IMAGEM
+<img src="./readme-images/observer.png" />
 
 [Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/DesignPatterns/03%20-%20Behavioral/3.3%20-%20Observable)  
+
+---
+
+### Estilos e Padrões Arquiteturais
+
+Um estilo arquitetura é uma **abordagem** de como **projetar** e entregar uma aplicação. Trata-se de como **organizar** os **componentes** responsáveis de uma arquitetura, como eles irão **interagir** entre si e quais **aspectos tecnológicos** irão atender. 
+
+- Arquitetura Monolítica
+
+IMAGEM
+
+- Arquitetura em Camadas
+
+IMAGEM
+
+- Arquitetura REST
+
+IMAGEM
+
+- Arquitetura de Microservices
+
+IMAGEM
+
+- Arquitetura de Plugin
+
+IMAGEM
+
+- Arquitetura Client-Server
+
+IMAGEM
+
+- Arquitetura Pines and Filters
+
+IMAGEM
+
+Os Padrões Arquiteturais são semelhantes aos "Design Patterns", mas possuem um escopo diferente. Padrões Arquiteturais são estratégias de alto nível que dizem respeito a componentes de grande escala, as propriedades e mecanismos globais de um sistema. Um projeto de arquitetura pode conter diversos estilos arquiteturais, e cada estilo arquitetural pode utilizar diversos padrões arquiteturais. Um padrão arquitetural pode ser um subconjunto de um estilo arquitetural visando um escopo específico. O padrão arquitetural é uma solução geral e reutilizável para um problema em um contexto particular. É uma solução recorrente para um problema recorrente.
+
+- Tier Architecture (Arquitetura 3 camadas)
+
+Cássica maneira de distribuir responsabilidades (apresentação, aplicação/negócios e acesso a dados). Pode ser aplicada em diversos cenários, porém geralmente é mais encontrada em aplicações com foco comercial.
+
+IMAGEM
+
+- Onion Architecture (Arquitetura Cebola - Clean Architecture)
+
+Padrão Arquitetural que, para chegar na camada mais interna, é necessário passar pelas camadas externas.
+
+IMAGEM
+
+- Arquitetura Hexagonal (Ports & Adapters)
+
+Tem como objetivo implementar a Onion Architecture, DDD, Clean, CQRS, mensageria... tudo junto na mesma aplicação. Permite que seja possível fazer qualquer coisa na arquitetura.
+
+IMAGEM
+
+- CQRS - Command Query Responsibility Segregation
+
+Um padrão arquitetural onde o foco principal é separar os meios de leitura e escrita de dados. Alterações de dados são realizados via Commands e leitura de dados são realizados via Queries. O objetivo do CQRS é prover expressividade para aplicação, pois todos os Commands representam uma intenção de negócio. CQRS promove a consistência eventual, que é quando possuímos um banco de leitura e outro de escrita com os mesmos dados, porém os dados não são consistidos exatamente no mesmo momento. Muito aplicado em arquiteturas hexagonais, microservices ou em aplicações que possuem uma alta demanda de consumo de dados. 
+
+Commands: Representam uma intenção de mudanças no estados de uma entidade. São expressivos e representam uma única intenção de negócio.
+Queries: É a forma de obter dados de um banco ou origem de dados para atender as necessidades da aplicação.
+
+IMAGEM
+
+- Event Sourcing
+
+É um Padrão Arquitetural - "Nós podemos buscar o estado de uma aplicação para encontrar o estado atual do mundo, e isso responde muitas perguntas. Entretanto há momentos que nós não só querermos ver onde nós estamos, mas também queremos saber como chegamos lá." - Martin Fowler.
+
+"Event Sourcing assegura que todas as mudanças feitas no estados de uma aplicação são armazenadas como uma sequência de eventos. Não só podemos buscar esses eventos, mas também podemos usar este log de eventos para reconstruir estados passados e ajustar automaticamente o estado atual com mudanças retroativas." - Martin Flowler
+
+A ideia central é persistir todos estados anteriores de uma entidade de negócio desde o momento de sua ciraçãop. Com estes dados é possível realizar o "replay" dos fatos passados para entender o comportamento do usuário, trabalhar com Big Data, Machine Learning, realizar testes de integração com cenários reais ou simplesmente recriar as entidades se necessário.
+
+IMAGEM
+
+- DDD (Domain-Driven Design)
+
+Indicado para aplicações complexas, com muitas entidades e regras de negócio. Um "guia" de como entender o negócio, organizá-lo em um conjunto de princípios, criar uma modelagem com base no negócio e implementar utilizando diversas boas práticas.
+
+Processos de "implementação" do DDD:
+
+- Entender o negócio
+- Extrair a Linguagem Ubíqua (Vocabulário de todos os termos específicos do domínio)
+- Modelagem Estratégica (Segregar seu domínio em partes menores e responsáveis com Mapa de Contextos - Context Map - que pode ser representado através de imagens e uma simples documentação do tipo de relacionamento entre os contextos)
+- Definir a Arquitetura
+- Modelagem Tática 
+    - Aggregate Object: Uma entidade que é a raiz agregadora de um processo do domínio que envolve mais de uma entidade.
+    - Domain Model: Uma entidade do domínio, possui estados e comportamentos. lógica de negócios, getters e setters AdHoc, etc...
+    - Value Object: Um objeto que agrega valor às entidades, não possui identidade e é imutável.
+    - Factory: Classe responsável por construir adequadamente um objeto / entidade.
+    - Domain Service: Serviço do domínio que atende partes do negócio que não se encaixam em entidades específicasq, trabalha com diversas entidades, realiza persistência através de repositórios e etc...
+    - Application Service: Serviço de aplicação que orquestra ações disparadas pela camada de apresentação e fornece DTO's para comunicação entre as demais camadas e para o consumo da camada de apresentação.
+    - Repository: Uma classe que realiza a persistência das entidades se comunicando diretamente com o meio de acesso aos dados, é utilizado apenas um repositório por agregação.
+    - External Service: Serviço externo que realiza a consulta/persistência de informações por meios diversos.  
+
+IMAGEM
+
+- Arquiteturas Evolutivas
+
+"Um arquiteto permite que decisões importantes sejam adiadas e um bom arquiteto maximiza o número de decisões não tomadas." - Uncle Bob
+
+"Uma arquitetura evolutiva suporta mudanças contínuas e incrementais como um primeiro princípio por meio de vários aspectos." - Rebecca Parsons
+
+"Mudanças são inevitáveis. A evolução, no entando, é opcional." - Tony Robbins
 
 ---
 
