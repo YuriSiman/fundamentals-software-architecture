@@ -260,6 +260,33 @@ IMAGEM
 
 [Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/DesignPatterns/02%20-%20Structural/2.3%20-%20Composite)  
 
+
+### Behavioral Patterns
+
+- Command
+
+Encapsula um command request em um objeto
+
+IMAGEM
+
+[Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/DesignPatterns/03%20-%20Behavioral/3.1%20-%20Command)  
+
+- Strategy
+
+Encapsula um algoritimo dentro de uma classe
+
+IMAGEM
+
+[Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/DesignPatterns/03%20-%20Behavioral/3.2%20-%20Strategy)  
+
+- Observer
+
+Uma forma de notificar mudanças a uma série de classes
+
+IMAGEM
+
+[Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/DesignPatterns/03%20-%20Behavioral/3.3%20-%20Observable)  
+
 ---
 
 ## :vertical_traffic_light: Status do Projeto
