@@ -222,9 +222,43 @@ Cria uma instância de diversas famílias de classes. Criar fábrica abstrata de
 
 Cria uma instância de diversas derivações de classes
 
+IMAGEM
+
+[Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/DesignPatterns/01%20-%20Creational/1.2%20-%20Factory%20Method)  
+
 - Singleton
 
 Cria uma única instância que será utilizada por os recursos
+
+IMAGEM
+
+[Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/DesignPatterns/01%20-%20Creational/1.3%20-%20Singleton)  
+
+### Structural Patterns
+
+- Adapter
+
+Compatibiliza objetos de interfaces diferentes
+
+IMAGEM
+
+[Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/DesignPatterns/02%20-%20Structural/2.1%20-%20Adapter)  
+
+- Facade
+
+Uma única classe que representa um subsistema
+
+IMAGEM
+
+[Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/DesignPatterns/02%20-%20Structural/2.2%20-%20Facade)  
+
+- Composite
+
+Compartilha um objeto em estruturas de árvores que representam hierarquias
+
+IMAGEM
+
+[Visualizar Código](https://github.com/YuriSiman/software-architecture-fundamentals/tree/master/DesignPatterns/02%20-%20Structural/2.3%20-%20Composite)  
 
 ---
 
