@@ -23,6 +23,7 @@ git clone https://github.com/YuriSiman/software-architecture-fundamentals.git
 - [x] [Clean Code](https://github.com/YuriSiman/software-architecture-fundamentals#clean-code)  
 - [x] [Design Patterns](https://github.com/YuriSiman/software-architecture-fundamentals#design-patterns)  
 - [x] [Estilos e Padrões Arquiteturais](https://github.com/YuriSiman/software-architecture-fundamentals#estilos-e-padrões-arquiteturais)  
+- [x] [DevOps](https://github.com/YuriSiman/software-architecture-fundamentals#devops)  
 
 ---
 
@@ -390,6 +391,12 @@ IMAGEM
 "Uma arquitetura evolutiva suporta mudanças contínuas e incrementais como um primeiro princípio por meio de vários aspectos." - Rebecca Parsons
 
 "Mudanças são inevitáveis. A evolução, no entando, é opcional." - Tony Robbins
+
+---
+
+### DevOps
+
+O termo DevOps deriva da junção das palavras desenvolvimento (developer) e operações (operations), sendo uma prática de engenharia de software que possui o intuito de unificar o desenvolvimento de software (Dev) e a operação de software (Ops). A característica principal do movimento DevOps é defender fortemente a automação e monitoramento em todas as fases da construção do software, da integração, teste, liberação para implantação e gerenciamento de infraestrutura. DevOps pretende fornecer, em ciclos de desenvolvimentos menores, frequência de implantação aumentada, liberações mais seguras, em alinhamento próximo com os ojetivos de negócio.
 
 ---
 
